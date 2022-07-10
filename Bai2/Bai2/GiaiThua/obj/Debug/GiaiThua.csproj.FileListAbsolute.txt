@@ -1,0 +1,8 @@
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\GiaiThua\bin\Debug\GiaiThua.exe.config
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\GiaiThua\bin\Debug\GiaiThua.exe
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\GiaiThua\bin\Debug\GiaiThua.pdb
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\GiaiThua\obj\Debug\GiaiThua.csproj.AssemblyReference.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\GiaiThua\obj\Debug\GiaiThua.csproj.SuggestedBindingRedirects.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\GiaiThua\obj\Debug\GiaiThua.csproj.CoreCompileInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\GiaiThua\obj\Debug\GiaiThua.exe
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\GiaiThua\obj\Debug\GiaiThua.pdb

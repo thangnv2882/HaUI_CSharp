@@ -1,0 +1,8 @@
+D:\Fighting\KyPhu4\.NET\Bai1\XepLoaiHS\bin\Debug\XepLoaiHS.exe.config
+D:\Fighting\KyPhu4\.NET\Bai1\XepLoaiHS\bin\Debug\XepLoaiHS.exe
+D:\Fighting\KyPhu4\.NET\Bai1\XepLoaiHS\bin\Debug\XepLoaiHS.pdb
+D:\Fighting\KyPhu4\.NET\Bai1\XepLoaiHS\obj\Debug\XepLoaiHS.csproj.AssemblyReference.cache
+D:\Fighting\KyPhu4\.NET\Bai1\XepLoaiHS\obj\Debug\XepLoaiHS.csproj.SuggestedBindingRedirects.cache
+D:\Fighting\KyPhu4\.NET\Bai1\XepLoaiHS\obj\Debug\XepLoaiHS.csproj.CoreCompileInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai1\XepLoaiHS\obj\Debug\XepLoaiHS.exe
+D:\Fighting\KyPhu4\.NET\Bai1\XepLoaiHS\obj\Debug\XepLoaiHS.pdb

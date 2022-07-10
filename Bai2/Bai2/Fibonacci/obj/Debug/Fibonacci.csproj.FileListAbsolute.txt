@@ -1,0 +1,8 @@
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\Fibonacci\bin\Debug\Fibonacci.exe.config
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\Fibonacci\bin\Debug\Fibonacci.exe
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\Fibonacci\bin\Debug\Fibonacci.pdb
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\Fibonacci\obj\Debug\Fibonacci.csproj.AssemblyReference.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\Fibonacci\obj\Debug\Fibonacci.csproj.SuggestedBindingRedirects.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\Fibonacci\obj\Debug\Fibonacci.csproj.CoreCompileInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\Fibonacci\obj\Debug\Fibonacci.exe
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\Fibonacci\obj\Debug\Fibonacci.pdb

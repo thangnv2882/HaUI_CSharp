@@ -1,0 +1,8 @@
+D:\Fighting\KyPhu4\.NET\Bai1\TamGiac\bin\Debug\TamGiac.exe.config
+D:\Fighting\KyPhu4\.NET\Bai1\TamGiac\bin\Debug\TamGiac.exe
+D:\Fighting\KyPhu4\.NET\Bai1\TamGiac\bin\Debug\TamGiac.pdb
+D:\Fighting\KyPhu4\.NET\Bai1\TamGiac\obj\Debug\TamGiac.csproj.AssemblyReference.cache
+D:\Fighting\KyPhu4\.NET\Bai1\TamGiac\obj\Debug\TamGiac.csproj.SuggestedBindingRedirects.cache
+D:\Fighting\KyPhu4\.NET\Bai1\TamGiac\obj\Debug\TamGiac.csproj.CoreCompileInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai1\TamGiac\obj\Debug\TamGiac.exe
+D:\Fighting\KyPhu4\.NET\Bai1\TamGiac\obj\Debug\TamGiac.pdb

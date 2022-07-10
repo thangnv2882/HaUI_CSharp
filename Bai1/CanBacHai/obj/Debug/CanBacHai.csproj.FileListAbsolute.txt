@@ -1,0 +1,8 @@
+D:\Fighting\KyPhu4\.NET\Bai1\CanBacHai\bin\Debug\CanBacHai.exe.config
+D:\Fighting\KyPhu4\.NET\Bai1\CanBacHai\bin\Debug\CanBacHai.exe
+D:\Fighting\KyPhu4\.NET\Bai1\CanBacHai\bin\Debug\CanBacHai.pdb
+D:\Fighting\KyPhu4\.NET\Bai1\CanBacHai\obj\Debug\CanBacHai.csproj.AssemblyReference.cache
+D:\Fighting\KyPhu4\.NET\Bai1\CanBacHai\obj\Debug\CanBacHai.csproj.SuggestedBindingRedirects.cache
+D:\Fighting\KyPhu4\.NET\Bai1\CanBacHai\obj\Debug\CanBacHai.csproj.CoreCompileInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai1\CanBacHai\obj\Debug\CanBacHai.exe
+D:\Fighting\KyPhu4\.NET\Bai1\CanBacHai\obj\Debug\CanBacHai.pdb

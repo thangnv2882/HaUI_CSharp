@@ -1,0 +1,8 @@
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\HeCoSo\bin\Debug\HeCoSo.exe.config
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\HeCoSo\bin\Debug\HeCoSo.exe
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\HeCoSo\bin\Debug\HeCoSo.pdb
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\HeCoSo\obj\Debug\HeCoSo.csproj.AssemblyReference.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\HeCoSo\obj\Debug\HeCoSo.csproj.SuggestedBindingRedirects.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\HeCoSo\obj\Debug\HeCoSo.csproj.CoreCompileInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\HeCoSo\obj\Debug\HeCoSo.exe
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\HeCoSo\obj\Debug\HeCoSo.pdb

@@ -1,0 +1,8 @@
+D:\Fighting\KyPhu4\.NET\Bai1\CSharpCanBan\bin\Debug\CSharpCanBan.exe.config
+D:\Fighting\KyPhu4\.NET\Bai1\CSharpCanBan\bin\Debug\CSharpCanBan.exe
+D:\Fighting\KyPhu4\.NET\Bai1\CSharpCanBan\bin\Debug\CSharpCanBan.pdb
+D:\Fighting\KyPhu4\.NET\Bai1\CSharpCanBan\obj\Debug\CSharpCanBan.csproj.AssemblyReference.cache
+D:\Fighting\KyPhu4\.NET\Bai1\CSharpCanBan\obj\Debug\CSharpCanBan.csproj.SuggestedBindingRedirects.cache
+D:\Fighting\KyPhu4\.NET\Bai1\CSharpCanBan\obj\Debug\CSharpCanBan.csproj.CoreCompileInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai1\CSharpCanBan\obj\Debug\CSharpCanBan.exe
+D:\Fighting\KyPhu4\.NET\Bai1\CSharpCanBan\obj\Debug\CSharpCanBan.pdb

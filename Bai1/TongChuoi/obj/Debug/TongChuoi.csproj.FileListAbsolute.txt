@@ -1,0 +1,8 @@
+D:\Fighting\KyPhu4\.NET\Bai1\TongChuoi\bin\Debug\TongChuoi.exe.config
+D:\Fighting\KyPhu4\.NET\Bai1\TongChuoi\bin\Debug\TongChuoi.exe
+D:\Fighting\KyPhu4\.NET\Bai1\TongChuoi\bin\Debug\TongChuoi.pdb
+D:\Fighting\KyPhu4\.NET\Bai1\TongChuoi\obj\Debug\TongChuoi.csproj.AssemblyReference.cache
+D:\Fighting\KyPhu4\.NET\Bai1\TongChuoi\obj\Debug\TongChuoi.csproj.SuggestedBindingRedirects.cache
+D:\Fighting\KyPhu4\.NET\Bai1\TongChuoi\obj\Debug\TongChuoi.csproj.CoreCompileInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai1\TongChuoi\obj\Debug\TongChuoi.exe
+D:\Fighting\KyPhu4\.NET\Bai1\TongChuoi\obj\Debug\TongChuoi.pdb
