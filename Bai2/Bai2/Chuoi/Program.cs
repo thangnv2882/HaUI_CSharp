@@ -44,7 +44,7 @@ namespace Chuoi
                 Console.Write(str[0] + " : ");
                 int count = 0;
                 for (int i = 0; i < str.Length; i++)
-                    if (str[0] == str[i])
+                    if (str[0].CompareTo(str[i]) == 0)
                         count++;
                 Console.WriteLine(count);
 

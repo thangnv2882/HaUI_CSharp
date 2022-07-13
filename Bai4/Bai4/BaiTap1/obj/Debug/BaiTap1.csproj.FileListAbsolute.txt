@@ -1,0 +1,8 @@
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap1\bin\Debug\BaiTap1.exe.config
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap1\bin\Debug\BaiTap1.exe
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap1\bin\Debug\BaiTap1.pdb
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap1\obj\Debug\BaiTap1.csproj.AssemblyReference.cache
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap1\obj\Debug\BaiTap1.csproj.SuggestedBindingRedirects.cache
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap1\obj\Debug\BaiTap1.csproj.CoreCompileInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap1\obj\Debug\BaiTap1.exe
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap1\obj\Debug\BaiTap1.pdb
