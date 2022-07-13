@@ -1,0 +1,8 @@
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\TinhToan\bin\Debug\TinhToan.exe.config
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\TinhToan\bin\Debug\TinhToan.exe
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\TinhToan\bin\Debug\TinhToan.pdb
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\TinhToan\obj\Debug\TinhToan.csproj.AssemblyReference.cache
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\TinhToan\obj\Debug\TinhToan.csproj.SuggestedBindingRedirects.cache
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\TinhToan\obj\Debug\TinhToan.csproj.CoreCompileInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\TinhToan\obj\Debug\TinhToan.exe
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\TinhToan\obj\Debug\TinhToan.pdb

@@ -1,0 +1,8 @@
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\DanhSach2\bin\Debug\DanhSach2.exe.config
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\DanhSach2\bin\Debug\DanhSach2.exe
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\DanhSach2\bin\Debug\DanhSach2.pdb
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\DanhSach2\obj\Debug\DanhSach2.csproj.AssemblyReference.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\DanhSach2\obj\Debug\DanhSach2.csproj.SuggestedBindingRedirects.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\DanhSach2\obj\Debug\DanhSach2.csproj.CoreCompileInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\DanhSach2\obj\Debug\DanhSach2.exe
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\DanhSach2\obj\Debug\DanhSach2.pdb

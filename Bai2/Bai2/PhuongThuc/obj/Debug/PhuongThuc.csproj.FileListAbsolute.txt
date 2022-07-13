@@ -1,0 +1,8 @@
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\PhuongThuc\bin\Debug\PhuongThuc.exe.config
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\PhuongThuc\bin\Debug\PhuongThuc.exe
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\PhuongThuc\bin\Debug\PhuongThuc.pdb
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\PhuongThuc\obj\Debug\PhuongThuc.csproj.AssemblyReference.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\PhuongThuc\obj\Debug\PhuongThuc.csproj.SuggestedBindingRedirects.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\PhuongThuc\obj\Debug\PhuongThuc.csproj.CoreCompileInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\PhuongThuc\obj\Debug\PhuongThuc.exe
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\PhuongThuc\obj\Debug\PhuongThuc.pdb

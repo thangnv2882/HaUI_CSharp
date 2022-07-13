@@ -1,0 +1,8 @@
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\NhapLieu\bin\Debug\NhapLieu.exe.config
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\NhapLieu\bin\Debug\NhapLieu.exe
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\NhapLieu\bin\Debug\NhapLieu.pdb
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\NhapLieu\obj\Debug\NhapLieu.csproj.AssemblyReference.cache
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\NhapLieu\obj\Debug\NhapLieu.csproj.SuggestedBindingRedirects.cache
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\NhapLieu\obj\Debug\NhapLieu.csproj.CoreCompileInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\NhapLieu\obj\Debug\NhapLieu.exe
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\NhapLieu\obj\Debug\NhapLieu.pdb

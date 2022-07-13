@@ -1,0 +1,8 @@
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\CopyFile\bin\Debug\CopyFile.exe.config
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\CopyFile\bin\Debug\CopyFile.exe
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\CopyFile\bin\Debug\CopyFile.pdb
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\CopyFile\obj\Debug\CopyFile.csproj.AssemblyReference.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\CopyFile\obj\Debug\CopyFile.csproj.SuggestedBindingRedirects.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\CopyFile\obj\Debug\CopyFile.csproj.CoreCompileInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\CopyFile\obj\Debug\CopyFile.exe
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\CopyFile\obj\Debug\CopyFile.pdb

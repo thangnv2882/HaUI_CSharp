@@ -1,0 +1,8 @@
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\Mang\bin\Debug\Mang.exe.config
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\Mang\bin\Debug\Mang.exe
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\Mang\bin\Debug\Mang.pdb
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\Mang\obj\Debug\Mang.csproj.AssemblyReference.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\Mang\obj\Debug\Mang.csproj.SuggestedBindingRedirects.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\Mang\obj\Debug\Mang.csproj.CoreCompileInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\Mang\obj\Debug\Mang.exe
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\Mang\obj\Debug\Mang.pdb

@@ -1,0 +1,8 @@
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\TachDay\bin\Debug\TachDay.exe.config
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\TachDay\bin\Debug\TachDay.exe
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\TachDay\bin\Debug\TachDay.pdb
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\TachDay\obj\Debug\TachDay.csproj.AssemblyReference.cache
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\TachDay\obj\Debug\TachDay.csproj.SuggestedBindingRedirects.cache
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\TachDay\obj\Debug\TachDay.csproj.CoreCompileInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\TachDay\obj\Debug\TachDay.exe
+D:\Fighting\KyPhu4\.NET\Bai3\Bai3\TachDay\obj\Debug\TachDay.pdb

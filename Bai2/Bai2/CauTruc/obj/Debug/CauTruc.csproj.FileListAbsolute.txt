@@ -1,0 +1,8 @@
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\CauTruc\bin\Debug\CauTruc.exe.config
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\CauTruc\bin\Debug\CauTruc.exe
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\CauTruc\bin\Debug\CauTruc.pdb
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\CauTruc\obj\Debug\CauTruc.csproj.AssemblyReference.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\CauTruc\obj\Debug\CauTruc.csproj.SuggestedBindingRedirects.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\CauTruc\obj\Debug\CauTruc.csproj.CoreCompileInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\CauTruc\obj\Debug\CauTruc.exe
+D:\Fighting\KyPhu4\.NET\Bai2\Bai2\CauTruc\obj\Debug\CauTruc.pdb
