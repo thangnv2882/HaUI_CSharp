@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "TimUSCLN/1.0.0": {
+        "runtime": {
+          "TimUSCLN.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TimUSCLN/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

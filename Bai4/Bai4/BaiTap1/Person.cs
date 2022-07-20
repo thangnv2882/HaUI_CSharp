@@ -28,7 +28,7 @@ namespace BaiTap1
         }
 
 
-        public void input()
+        public void Input()
         {
             Console.Write("Id: "); id = long.Parse(Console.ReadLine());
             Console.Write("Name: "); name = Console.ReadLine();
@@ -36,19 +36,19 @@ namespace BaiTap1
             Console.Write("Email: "); email = Console.ReadLine();
             Console.Write("Address: "); address = Console.ReadLine();
         }
-        public void output()
+        public void Output()
         {
-            Console.Write("Id: " + id + "/n");
-            Console.Write("Name: " + name + "/n");
-            Console.Write("Age: " + age + "/n");
-            Console.Write("Email: " + email + "/n");
-            Console.Write("Address: " + address + "/n");
+            Console.Write("Id: " + id + "\n");
+            Console.Write("Name: " + name + "\n");
+            Console.Write("Age: " + age + "\n");
+            Console.Write("Email: " + email + "\n");
+            Console.Write("Address: " + address + "\n");
         }
 
 
 
 
-        public void checkAge(int age)
+        public void CheckAge(int age)
         {
             if (age > 18)
                 Console.WriteLine("Bạn đủ tuổi bầu cử");

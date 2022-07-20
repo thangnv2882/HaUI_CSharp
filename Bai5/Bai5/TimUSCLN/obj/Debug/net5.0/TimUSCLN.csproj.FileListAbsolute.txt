@@ -1,0 +1,16 @@
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\TimUSCLN\bin\Debug\net5.0\TimUSCLN.exe
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\TimUSCLN\bin\Debug\net5.0\TimUSCLN.deps.json
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\TimUSCLN\bin\Debug\net5.0\TimUSCLN.runtimeconfig.json
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\TimUSCLN\bin\Debug\net5.0\TimUSCLN.runtimeconfig.dev.json
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\TimUSCLN\bin\Debug\net5.0\TimUSCLN.dll
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\TimUSCLN\bin\Debug\net5.0\TimUSCLN.pdb
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\TimUSCLN\obj\Debug\net5.0\TimUSCLN.csproj.AssemblyReference.cache
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\TimUSCLN\obj\Debug\net5.0\TimUSCLN.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\TimUSCLN\obj\Debug\net5.0\TimUSCLN.AssemblyInfoInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\TimUSCLN\obj\Debug\net5.0\TimUSCLN.AssemblyInfo.cs
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\TimUSCLN\obj\Debug\net5.0\TimUSCLN.csproj.CoreCompileInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\TimUSCLN\obj\Debug\net5.0\TimUSCLN.dll
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\TimUSCLN\obj\Debug\net5.0\refint\TimUSCLN.dll
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\TimUSCLN\obj\Debug\net5.0\TimUSCLN.pdb
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\TimUSCLN\obj\Debug\net5.0\TimUSCLN.genruntimeconfig.cache
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\TimUSCLN\obj\Debug\net5.0\ref\TimUSCLN.dll

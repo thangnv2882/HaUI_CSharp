@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai4", "Bai4\Bai4.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiTap1", "BaiTap1\BaiTap1.csproj", "{F744E82A-7943-4C0C-8F18-5A655D416B8F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiTap2", "BaiTap2\BaiTap2.csproj", "{787C1F12-7383-4214-B1D6-4CB38C02753E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiTap3", "BaiTap3\BaiTap3.csproj", "{A740E12C-AAF8-4CE3-B91B-DBEDDAD55BC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{F744E82A-7943-4C0C-8F18-5A655D416B8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F744E82A-7943-4C0C-8F18-5A655D416B8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F744E82A-7943-4C0C-8F18-5A655D416B8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{787C1F12-7383-4214-B1D6-4CB38C02753E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{787C1F12-7383-4214-B1D6-4CB38C02753E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{787C1F12-7383-4214-B1D6-4CB38C02753E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{787C1F12-7383-4214-B1D6-4CB38C02753E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A740E12C-AAF8-4CE3-B91B-DBEDDAD55BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A740E12C-AAF8-4CE3-B91B-DBEDDAD55BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A740E12C-AAF8-4CE3-B91B-DBEDDAD55BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A740E12C-AAF8-4CE3-B91B-DBEDDAD55BC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

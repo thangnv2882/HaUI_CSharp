@@ -1,0 +1,16 @@
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap2\bin\Debug\net5.0\BaiTap2.exe
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap2\bin\Debug\net5.0\BaiTap2.deps.json
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap2\bin\Debug\net5.0\BaiTap2.runtimeconfig.json
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap2\bin\Debug\net5.0\BaiTap2.runtimeconfig.dev.json
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap2\bin\Debug\net5.0\BaiTap2.dll
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap2\bin\Debug\net5.0\BaiTap2.pdb
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap2\obj\Debug\net5.0\BaiTap2.csproj.AssemblyReference.cache
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap2\obj\Debug\net5.0\BaiTap2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap2\obj\Debug\net5.0\BaiTap2.AssemblyInfoInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap2\obj\Debug\net5.0\BaiTap2.AssemblyInfo.cs
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap2\obj\Debug\net5.0\BaiTap2.csproj.CoreCompileInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap2\obj\Debug\net5.0\BaiTap2.dll
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap2\obj\Debug\net5.0\refint\BaiTap2.dll
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap2\obj\Debug\net5.0\BaiTap2.pdb
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap2\obj\Debug\net5.0\BaiTap2.genruntimeconfig.cache
+D:\Fighting\KyPhu4\.NET\Bai4\Bai4\BaiTap2\obj\Debug\net5.0\ref\BaiTap2.dll

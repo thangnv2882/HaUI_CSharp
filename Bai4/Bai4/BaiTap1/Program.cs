@@ -14,10 +14,10 @@ namespace BaiTap1
             Console.OutputEncoding = Encoding.Unicode;
 
             Person person = new Person();
-            person.input();
+            person.Input();
             Console.WriteLine("Thông tin vừa nhập.");
-            person.output();
-            person.checkAge(person.age);
+            person.Output();
+            person.CheckAge(person.age);
         }
     }
 }

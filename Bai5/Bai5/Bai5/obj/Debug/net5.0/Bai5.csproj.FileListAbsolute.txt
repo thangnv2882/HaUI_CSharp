@@ -1,0 +1,16 @@
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\Bai5\bin\Debug\net5.0\Bai5.exe
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\Bai5\bin\Debug\net5.0\Bai5.deps.json
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\Bai5\bin\Debug\net5.0\Bai5.runtimeconfig.json
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\Bai5\bin\Debug\net5.0\Bai5.runtimeconfig.dev.json
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\Bai5\bin\Debug\net5.0\Bai5.dll
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\Bai5\bin\Debug\net5.0\Bai5.pdb
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\Bai5\obj\Debug\net5.0\Bai5.csproj.AssemblyReference.cache
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\Bai5\obj\Debug\net5.0\Bai5.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\Bai5\obj\Debug\net5.0\Bai5.AssemblyInfoInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\Bai5\obj\Debug\net5.0\Bai5.AssemblyInfo.cs
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\Bai5\obj\Debug\net5.0\Bai5.csproj.CoreCompileInputs.cache
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\Bai5\obj\Debug\net5.0\Bai5.dll
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\Bai5\obj\Debug\net5.0\refint\Bai5.dll
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\Bai5\obj\Debug\net5.0\Bai5.pdb
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\Bai5\obj\Debug\net5.0\Bai5.genruntimeconfig.cache
+D:\Fighting\KyPhu4\.NET\Bai5\Bai5\Bai5\obj\Debug\net5.0\ref\Bai5.dll
