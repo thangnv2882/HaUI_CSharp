@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Bai5
 {
@@ -27,10 +31,10 @@ namespace Bai5
             Console.Write("Nhập điểm toán: ");
             toan = double.Parse(Console.ReadLine());
 
-            Console.Write("Nhập điểm ly: ");
+            Console.Write("Nhập điểm lý: ");
             ly = double.Parse(Console.ReadLine());
 
-            Console.Write("Nhập điểm hoa: ");
+            Console.Write("Nhập điểm hóa: ");
             hoa = double.Parse(Console.ReadLine());
 
             Console.Write("Nhập điểm ưu tiên: ");
@@ -46,7 +50,7 @@ namespace Bai5
 
             Console.WriteLine("Họ tên: " + hoTen);
 
-            Console.WriteLine("Địa chỉ: "  + diaChi);
+            Console.WriteLine("Địa chỉ: " + diaChi);
 
             Console.WriteLine("Điểm toán: " + toan);
 
@@ -60,12 +64,10 @@ namespace Bai5
 
         }
 
-        public void OutputInline()
+        public void OutputOneline()
         {
             Console.WriteLine(soBD + "\t" + hoTen + "\t" + diaChi + "\t" + toan + "\t" + ly + "\t" + hoa + "\t" + diemUuTien + "\t" + tongDiem);
 
         }
-
     }
-
 }

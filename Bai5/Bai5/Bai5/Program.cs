@@ -8,13 +8,14 @@ namespace Bai5
     {
         static void Main(string[] args)
         {
-            Console.InputEncoding = Encoding.UTF8;
-            Console.OutputEncoding = Encoding.UTF8;
+            Console.InputEncoding = Encoding.Unicode;
+            Console.OutputEncoding = Encoding.Unicode;
 
-            List<ThiSinh> listThiSinh = new List<ThiSinh>();
+            List<ThiSinh> lists = new List<ThiSinh>();
 
             do
             {
+                Console.WriteLine("\n======== MENU ========");
                 Console.WriteLine("1. Nhập thông tin 1 thí sinh");
                 Console.WriteLine("2. Hiển thị toàn bộ danh sách");
                 Console.WriteLine("3. Hiển thị thí sinh theo điểm");
@@ -24,54 +25,40 @@ namespace Bai5
 
                 Console.Write("Nhập lựa chọn: ");
                 int choose = int.Parse(Console.ReadLine());
+
                 switch (choose)
                 {
                     case 1:
-                        ThiSinh a = new ThiSinh();
-                        a.Input();
-                        listThiSinh.Add(a);
+                        NhapThongTinMotThiSinh(lists);
                         break;
-
                     case 2:
-                        Console.WriteLine("\t\tTHÔNG TIN DANH SÁCH THÍ SINH");
                         showTitle();
-                        foreach (ThiSinh ThiSinh in listThiSinh)
+                        lists.ForEach(ts =>
                         {
-                            ThiSinh.OutputInline();
-                        }
+                            Console.WriteLine($"{ts.soBD,5} {ts.hoTen,20} {ts.diaChi,20} {ts.toan,10} {ts.ly,10} {ts.hoa,10} {ts.diemUuTien,15} {ts.tongDiem,10}");
+                        });
                         break;
-
                     case 3:
-                        Console.Write("Nhập số điểm cần tìm: ");
-                        double mark = double.Parse(Console.ReadLine());
-
-                        Console.WriteLine("\t\tTHÔNG TIN DANH SÁCH THÍ SINH");
+                        Console.Write("Nhập điểm cần tìm kiếm: ");
+                        double diem = double.Parse(Console.ReadLine());
                         showTitle();
-                        getThiSinhByTotalMark(listThiSinh, mark);
-                        break;
+                        findByTongDiem(lists, diem);
 
+                        break;
                     case 4:
-                        Console.Write("Nhập địa chỉ cần tìm: ");
-                        string address = Console.ReadLine();
-
-                        Console.WriteLine("\t\tTHÔNG TIN DANH SÁCH THÍ SINH");
+                        Console.Write("Nhập địa chỉ cần tìm kiếm: ");
+                        string diaChi = Console.ReadLine();
                         showTitle();
-                        getThiSinhByTotalAddress(listThiSinh, address);
+                        findByDiaChi(lists, diaChi);
                         break;
-
                     case 5:
-                        Console.Write("Nhập số báo danh cần tìm: ");
-                        string sobd = Console.ReadLine();
-
-                        //Console.WriteLine("\t\tTHÔNG TIN DANH SÁCH THÍ SINH");
-                        //showTitle();
-                        getThiSinhByTotalSoBD(listThiSinh, sobd);
+                        Console.Write("Nhập số báo danh cần tìm kiếm: ");
+                        string soBD = Console.ReadLine();
+                        findBySoBD(lists, soBD);
                         break;
-
                     case 6:
                         Environment.Exit(0);
                         break;
-
                     default:
                         Console.WriteLine("Lựa chọn không hợp lệ");
                         break;
@@ -80,39 +67,56 @@ namespace Bai5
             } while (true);
         }
 
-        static void getThiSinhByTotalMark(List<ThiSinh> listThiSinh, double mark)
+        static void NhapThongTinMotThiSinh(List<ThiSinh> lists)
         {
-            foreach (ThiSinh ThiSinh in listThiSinh)
+            ThiSinh ts = new ThiSinh();
+            ts.Input();
+            lists.Add(ts);
+        }
+
+        static void findByTongDiem(List<ThiSinh> lists, double diem)
+        {
+            lists.ForEach(ts =>
             {
-                if (ThiSinh.tongDiem >= mark)
-                    ThiSinh.OutputInline();
+                if (ts.tongDiem >= diem)
+                {
+                    Console.WriteLine($"{ts.soBD,5} {ts.hoTen,20} {ts.diaChi,20} {ts.toan,10} {ts.ly,10} {ts.hoa,10} {ts.diemUuTien,15} {ts.tongDiem,10}");
+                }
+            });
+        }
+
+        static void findByDiaChi(List<ThiSinh> lists, string diaChi)
+        {
+            lists.ForEach(ts =>
+            {
+                if (ts.diaChi.Equals(diaChi))
+                {
+                    Console.WriteLine($"{ts.soBD,5} {ts.hoTen,20} {ts.diaChi,20} {ts.toan,10} {ts.ly,10} {ts.hoa,10} {ts.diemUuTien,15} {ts.tongDiem,10}");
+                }
+            });
+        }
+
+        static void findBySoBD(List<ThiSinh> lists, string soBD)
+        {
+            int d = 0;
+            lists.ForEach(ts =>
+            {
+                if (ts.soBD.Equals(soBD))
+                {
+                    d++;
+                    ts.Output();
+                }
+            });
+            if (d == 0)
+            {
+                Console.WriteLine("Không có thí sinh nào có số báo danh: " + soBD);
             }
         }
 
-        static void getThiSinhByTotalSoBD(List<ThiSinh> listThiSinh, string soBD)
-        {
-            foreach (ThiSinh ThiSinh in listThiSinh)
-            {
-                if (ThiSinh.soBD.Equals(soBD))
-                    ThiSinh.Output();
-            }
-            Console.WriteLine("Không tồn tại thí sinh có số báo danh: " + soBD);
-        }
-
-        static void getThiSinhByTotalAddress(List<ThiSinh> listThiSinh, string address)
-        {
-            foreach (ThiSinh ThiSinh in listThiSinh)
-            {
-                if (ThiSinh.diaChi.Equals(address))
-                    ThiSinh.OutputInline();
-            }
-        }
 
         static void showTitle()
         {
-            Console.WriteLine("SoBD" + "\t" + "HoTen" + "\t" + "Địa chỉ" + "\t" + "Toán" + "\t" + "Lý" + "\t" + "Hóa" + "\t" + "Điểm ƯT" + "\t" + "Tổng điểm");
+            Console.WriteLine($"{"Số BD",5} {"Họ tên",20} {"Địa chỉ",20} {"Toán",10} {"Lý",10} {"Hoá",10} {"Điểm ưu tiên",15} {"Tổng điểm",10}");
         }
-
-        
     }
 }

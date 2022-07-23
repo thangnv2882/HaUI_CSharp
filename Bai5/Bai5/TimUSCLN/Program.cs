@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Numerics;
 
 namespace TimUSCLN
 {
@@ -7,7 +7,6 @@ namespace TimUSCLN
     {
         static void Main(string[] args)
         {
-
             Console.InputEncoding = System.Text.Encoding.Unicode;
             Console.OutputEncoding = System.Text.Encoding.Unicode;
 
@@ -16,7 +15,7 @@ namespace TimUSCLN
 
             TimUSCLN[] array = new TimUSCLN[n];
 
-            for(int i = 0; i < array.Length; i++)
+            for (int i = 0; i < array.Length; i++)
             {
                 array[i] = new TimUSCLN();
                 Console.WriteLine("Nhập đối tượng " + (i + 1));
@@ -27,12 +26,18 @@ namespace TimUSCLN
             {
                 Console.WriteLine("Thông tin đối tượng " + (i + 1));
                 array[i].Xuat();
-                Console.WriteLine("Ước chung nhỏ nhất: " + array[i].Solve(array[i].sothu1, array[i].sothu2));
+                Console.WriteLine("Ước chung lớn nhất: " + array[i].Solve(array[i].sothu1, array[i].sothu2) + "\n");
             }
 
+            // Cách 2
+            Console.WriteLine("\nHàm có sẵn.");
 
-        
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine("Thông tin đối tượng " + (i + 1));
+                array[i].Xuat();
+                Console.WriteLine("Ước chung lớn nhất: " + BigInteger.GreatestCommonDivisor(array[i].sothu1, array[i].sothu2));
+            }
         }
-
     }
 }
