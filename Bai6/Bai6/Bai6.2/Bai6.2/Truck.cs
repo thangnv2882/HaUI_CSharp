@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Bai6._2
 {
-    class Truck:Vehicles
+    class Truck : Vehicles
     {
         public int truckload { get; set; }
 
-        public Truck():base()
+        public Truck() : base()
         {
         }
 
@@ -28,7 +28,7 @@ namespace Bai6._2
         public override void Output()
         {
             base.Output();
-            Console.WriteLine("Truckload: " + truckload);
+            Console.WriteLine(String.Format("{0, -16}{1, -15}", "", truckload));
         }
     }
 }

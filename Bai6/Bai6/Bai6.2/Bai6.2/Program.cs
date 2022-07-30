@@ -3,10 +3,11 @@ using System.Collections.Generic;
 
 namespace Bai6._2
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
+
             Console.InputEncoding = System.Text.Encoding.Unicode;
             Console.OutputEncoding = System.Text.Encoding.Unicode;
 
@@ -26,7 +27,7 @@ namespace Bai6._2
                 Console.Write("Nhập lựa chọn của bạn: ");
                 choose = int.Parse(Console.ReadLine());
 
-                switch(choose)
+                switch (choose)
                 {
                     case 1:
                         InputData(vehicles);
@@ -37,6 +38,7 @@ namespace Bai6._2
                     case 3:
                         Console.Write("Nhập id cần tìm kiếm: ");
                         string idFind = Console.ReadLine();
+                        Title();
                         FindById(vehicles, idFind);
                         break;
                     case 4:
@@ -55,14 +57,14 @@ namespace Bai6._2
                         Console.WriteLine("Thoát chương trình");
                         Environment.Exit(0);
                         break;
-                   
+
 
                     default:
                         Console.WriteLine("Lựa chọn không hợp lệ");
                         break;
                 }
 
-            } while(true);
+            } while (true);
 
 
         }
@@ -81,14 +83,14 @@ namespace Bai6._2
             Title();
             vehicles.ForEach(item =>
             {
-                Console.WriteLine(item.ToString());
+                item.Output();
             });
         }
 
         static void Title()
         {
-            Console.WriteLine(String.Format("{0, -8}{1, -15}{2, -25}{3, -10}{4, -10}",
-                            "Id", "Maker", "Model", "Year", "Price"));
+            Console.WriteLine(String.Format("{0, -8}{1, -15}{2, -25}{3, -10}{4, -10}{5, -15} {6, -15}",
+                            "Id", "Maker", "Model", "Year", "Price", "Color", "Truckload"));
         }
 
         static void FindById(List<Vehicles> vehicles, string idFind)
@@ -102,11 +104,10 @@ namespace Bai6._2
                     cnt++;
                 }
             });
-            if(cnt == 0)
+            if (cnt == 0)
             {
                 Console.WriteLine("Không có chiếc xe nào có id là: " + idFind);
             }
-
         }
 
         static void FindByMaker(List<Vehicles> vehicles, string maker)
@@ -116,7 +117,7 @@ namespace Bai6._2
             {
                 if (item.maker.CompareTo(maker) == 0)
                 {
-                    Console.WriteLine(item.ToString());
+                    item.Output();
                     cnt++;
                 }
             });
@@ -132,11 +133,21 @@ namespace Bai6._2
             Console.WriteLine("Danh sách trước khi sắp xếp.");
             ShowData(vehicles);
 
-            for(int i = 0; i < vehicles.Count-1; i++)
-                for(int j = i+1; j < vehicles.Count; j++)
+            for (int i = 0; i < vehicles.Count - 1; i++)
+            {
+                for (int j = i + 1; j < vehicles.Count; j++)
+                {
                     if (vehicles[i].price > vehicles[j].price)
+                    {
+                        //Vehicles temp = vehicles[i];
+                        //vehicles[i] = vehicles[j];
+                        //vehicles[j] = temp;
                         (vehicles[i], vehicles[j]) = (vehicles[j], vehicles[i]);
-                    
+                    }
+                }
+
+            }
+
 
             Console.WriteLine("Danh sách sau khi sắp xếp theo giá.");
             ShowData(vehicles);
@@ -149,9 +160,20 @@ namespace Bai6._2
             ShowData(vehicles);
 
             for (int i = 0; i < vehicles.Count - 1; i++)
+            {
                 for (int j = i + 1; j < vehicles.Count; j++)
+                {
                     if (vehicles[i].year > vehicles[j].year)
+                    {
+                        //Vehicles temp = vehicles[i];
+                        //vehicles[i] = vehicles[j];
+                        //vehicles[j] = temp;
                         (vehicles[i], vehicles[j]) = (vehicles[j], vehicles[i]);
+                    }
+
+                }
+
+            }
 
 
             Console.WriteLine("Danh sách sau khi sắp xếp theo năm sản xuất.");

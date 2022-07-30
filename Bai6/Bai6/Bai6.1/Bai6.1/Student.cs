@@ -11,7 +11,7 @@ namespace Bai6._1
         public byte math { get; set; }
         public byte physics { get; set; }
 
-        public void Input()
+        public override void Input()
         {
             base.Input();
             Console.Write("Math: ");
@@ -22,7 +22,7 @@ namespace Bai6._1
 
         }
 
-        public void Output()
+        public override void Output()
         {
             base.Output();
             string str = String.Format("{0, -10}{1, -10}{2, -10}", math, physics, Total());

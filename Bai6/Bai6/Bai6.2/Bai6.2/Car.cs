@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Bai6._2
 {
-    class Car:Vehicles
+    class Car : Vehicles
     {
 
         public string color { get; set; }
 
-        public Car():base()
+        public Car() : base()
         {
         }
 
@@ -29,7 +29,7 @@ namespace Bai6._2
         public override void Output()
         {
             base.Output();
-            Console.WriteLine("Color: " + color);
+            Console.WriteLine(String.Format("{0, -15}{1, -15}", color, ""));
         }
 
 

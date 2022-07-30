@@ -11,23 +11,23 @@ namespace Bai6._1
         public int id { get; set; }
         public string name { get; set; }
         public string address { get; set; }
-        private static int cnt = 1;
 
         public Person(string name, string address)
         {
-            this.id = cnt++;
             this.name = name;
             this.address = address;
         }
 
         public Person()
         {
-            this.id = cnt++;
-
         }
 
-        public void Input()
+        public virtual void Input()
         {
+
+            Console.Write("Id: ");
+            id = int.Parse(Console.ReadLine());
+
             Console.Write("Name: ");
             name = Console.ReadLine();
 
@@ -35,7 +35,7 @@ namespace Bai6._1
             address = Console.ReadLine();
         }
 
-        public void Output()
+        public virtual void Output()
         {
             string str = String.Format("{0, -8}{1, -20}{2, -25}", id, name, address);
             Console.Write(str);
