@@ -1,0 +1,62 @@
+﻿<Window x:Class="Bai9._4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bai9._4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" Width="350" HorizontalAlignment="Stretch">
+            <Label HorizontalAlignment="Center" Foreground="Red" FontSize="30">Bảng Tính Tiền Điện</Label>
+
+            <StackPanel Width="500" Orientation="Horizontal" Margin="0,0,0,10">
+                <Label Width="150">Họ tên khách hàng: </Label>
+                <ComboBox x:Name="listName" SelectedIndex="0" Width="150"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <StackPanel Orientation="Vertical"  Margin="0,0,20,0">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <Label Width="100">Chỉ số cũ: </Label>
+                        <TextBox Width="50" VerticalAlignment="Center" Padding="5" Name="tbChiSoCu"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <Label Width="100">Chỉ số mới: </Label>
+                        <TextBox Width="50" VerticalAlignment="Center" Padding="5" Name="tbChiSoMoi"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Width="100">Số kw tiêu thụ:</Label>
+                        <TextBox Width="50" VerticalAlignment="Center" Padding="5" Name="tbTieuThu"></TextBox>
+                    </StackPanel>
+                    <Label HorizontalAlignment="Center">Tổng số tiền phải trả</Label>
+                    <TextBox VerticalAlignment="Center" Padding="5" Name="tbPhaiTra"></TextBox>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Width="50" Height="20" Margin="5" Click="Button_Click_Tinh">Tính</Button>
+                        <Button Width="50" Height="20" Margin="5" Click="Button_Click_In">In</Button>
+                    </StackPanel>
+                    <Button  Width="50
+                             " Height="20" Margin="5">Thoát</Button>
+
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <Label Width="130">Số kw trong định mức:</Label>
+                        <TextBox Width="50" VerticalAlignment="Center" Padding="5" Name="tbTrongDM"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <Label Width="130">Số kw vượt định mức:</Label>
+                        <TextBox Width="50" VerticalAlignment="Center" Padding="5"  Name="tbVuotDM"></TextBox>
+                    </StackPanel>
+                    <Label Height="25">Định mức là 50kw</Label>
+                    <Label Height="25">Trong định mức là 500đ/1kw</Label>
+                    <Label Height="25">Vượt định mức là 1000đ/1kw</Label>
+
+                    <TextBox Height="auto" VerticalAlignment="Center" Padding="5" Name="tbShow"></TextBox>
+                    
+                    
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>
