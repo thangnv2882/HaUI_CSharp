@@ -13,15 +13,15 @@
         <Label Content="Ngày sinh" HorizontalAlignment="Left" Margin="100,160,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
         <Label Content="Số tiền bán hàng" HorizontalAlignment="Left" Margin="100,190,0,0" VerticalAlignment="Top" Height="30" Width="120"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="228,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="25" FontSize="14" Name="txtTen2"/>
-        <ComboBox HorizontalAlignment="Left" Margin="228,130,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0" Name="cbLoai2">
+        <TextBox HorizontalAlignment="Left" Margin="228,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="25" FontSize="14" Name="txtTen2" IsReadOnly="True"/>
+        <ComboBox HorizontalAlignment="Left" Margin="228,130,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0" Name="cbLoai2" IsReadOnly="True">
             <ComboBoxItem>Cơ hữu</ComboBoxItem>
             <ComboBoxItem>Hợp đồng</ComboBoxItem>
             <ComboBoxItem>Cộng tác viên</ComboBoxItem>
         </ComboBox>
 
-        <DatePicker HorizontalAlignment="Left" Margin="228,160,0,0" VerticalAlignment="Top" Width="120" Name="dpNS2"/>
-        <TextBox HorizontalAlignment="Left" Margin="228,190,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="25" FontSize="14" Name="txtTien2"/>
+        <DatePicker HorizontalAlignment="Left" Margin="228,160,0,0" VerticalAlignment="Top" Width="120" Name="dpNS2" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Margin="228,190,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="25" FontSize="14" Name="txtTien2" IsReadOnly="True"/>
         <Button Content="Thoát" HorizontalAlignment="Center" Margin="0,237,0,0" VerticalAlignment="Top" Height="40" Width="80" Click="Thoat_Click"/>
 
     </Grid>
