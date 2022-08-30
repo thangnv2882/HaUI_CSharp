@@ -1,1 +1,1 @@
-*.dotnet_HaUI
+*.Mau

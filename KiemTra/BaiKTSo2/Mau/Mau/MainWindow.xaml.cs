@@ -99,10 +99,9 @@ namespace Mau
             window2.cbLoai2.Text = tt[2];
             window2.txtTien2.Text = tt[3].Substring(15);
 
-            window2.txtTen2.IsReadOnly = true;
-            window2.dpNS2.IsRea = true;
-            window2.cbLoai2.IsReadOnly = true;
-            window2.txtTien2.IsReadOnly = true;
+            //window2.txtTen2.IsReadOnly = true;
+            //window2.cbLoai2.IsReadOnly = true;
+            //window2.txtTien2.IsReadOnly = true;
 
             window2.Show();
 
