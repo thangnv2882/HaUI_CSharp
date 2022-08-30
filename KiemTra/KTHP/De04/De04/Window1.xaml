@@ -1,0 +1,24 @@
+﻿<Window x:Class="De04.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:De04"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <DataGrid Name="dgw1" Margin="0,235,0,0" Height="135" VerticalAlignment="Top" HorizontalAlignment="Center" Width="660" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã danh mục" Width="150" Binding="{Binding MaDm}"/>
+                <DataGridTextColumn Header="Tên danh mục" Width="150" Binding="{Binding TenDm}"/>
+                <DataGridTextColumn Header="Tổng tiền" Width="*" Binding="{Binding TongTien}" />
+            </DataGrid.Columns>
+            <DataGrid.Resources>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="FontWeight" Value="bold" />
+                    <Setter Property="HorizontalAlignment" Value="Center" />
+                </Style>
+            </DataGrid.Resources>
+        </DataGrid>
+    </Grid>
+</Window>

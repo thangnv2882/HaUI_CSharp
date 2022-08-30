@@ -1,5 +1,4 @@
-﻿
-using De01.Models;
+﻿using De01.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,197 +28,153 @@ namespace De01
         }
         QuanLyBenhNhanDBContext db = new QuanLyBenhNhanDBContext();
 
-        public void HienThiCB()
-        {
-            var query = from khoa in db.Khoas
-                        select khoa;
-            CbKhoa.ItemsSource = query.ToList();
-            CbKhoa.DisplayMemberPath = "TenKhoa";
-            CbKhoa.SelectedValuePath = "MaKhoa";
-            CbKhoa.SelectedIndex = -1;
-        }
-        public void HienThiDuLieu()
-        {
-            dg.Items.Clear();
-            var query = from bn in db.BenhNhans
-                        orderby bn.SoNgayNamVien descending
-                        select bn;
-            for (int i = 0; i < query.ToList().Count; i++)
-            {
-                BenhNhan benhNhan = query.ToList()[i];
-                dg.Items.Add(benhNhan);
-            }
-        }
-
-
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             HienThiCB();
             HienThiDuLieu();
         }
 
-        private void Them(object sender, RoutedEventArgs e)
+        public void HienThiCB()
         {
-            if(CheckDL())
-            {
-                BenhNhan benhNhan = new BenhNhan();
-                benhNhan.MaBn = int.Parse(tbMabn.Text);
-                benhNhan.HoTen = tbTen.Text;
-
-                Khoa itemSelected = (Khoa)CbKhoa.SelectedItem;
-                int maKhoa = itemSelected.MaKhoa;
-                benhNhan.MaKhoa = maKhoa;
-                benhNhan.SoNgayNamVien = int.Parse(tbSoNgay.Text);
-                benhNhan.VienPhi = int.Parse(tbSoNgay.Text) * 200000;
-                db.BenhNhans.Add(benhNhan);
-                db.SaveChanges();
-                MessageBox.Show("Thêm thành công");
-                HienThiDuLieu();
-            }
+            var query = from k in db.Khoas
+                        select k;
+            CBKhoa.ItemsSource = query.ToList();
+            CBKhoa.DisplayMemberPath = "TenKhoa";
+            CBKhoa.SelectedValuePath = "MaKhoa";
+            CBKhoa.SelectedIndex = -1;
         }
+        public void HienThiDuLieu()
+        {
+            var query = from bn in db.BenhNhans
+                        join k in db.Khoas
+                        on bn.MaKhoa equals k.MaKhoa
+                        orderby bn.SoNgayNamVien descending
+                        select new
+                        {
+                            bn.MaBn,
+                            bn.HoTen,
+                            k.TenKhoa,
+                            bn.SoNgayNamVien,
+                            VienPhi = bn.thanhTien()
+                        };
+            dg.ItemsSource = query.ToList();
+        }
+
         public Boolean CheckDL()
         {
-            string tb = "";
-            if (tbMabn.Text.CompareTo("") == 0
-                || tbTen.Text.CompareTo("") == 0
-                || tbDc.Text.CompareTo("") == 0
-                || tbSoNgay.Text.CompareTo("") == 0
-                || CbKhoa.Text.CompareTo("") == 0)
+            string t = "";
+            if(txtMa.Text.CompareTo("") == 0
+                || txtTen.Text.CompareTo("") == 0
+                || txtNgay.Text.CompareTo("") == 0
+                || txtDC.Text.CompareTo("") == 0
+                || CBKhoa.Text.CompareTo("") == 0)
             {
-                tb += "Vui lòng nhập đầy đủ dữ liệu";
+                t += "Vui lòng nhâp đầy đủ dữ liệu";
             }
             else
             {
                 int a;
-                if (!int.TryParse(tbMabn.Text, out a))
+                if(!int.TryParse(txtMa.Text, out a))
                 {
-                    tb += "\nMã bênh nhân phải là số nguyên";
+                    t += "Mã bênh nhân phải là số nguyên";
                 }
                 else
                 {
-                    var query = db.BenhNhans.SingleOrDefault(t => t.MaBn == int.Parse(tbMabn.Text));
-                    if (query != null)
+                    var query = db.BenhNhans.SingleOrDefault(t => t.MaBn == int.Parse(txtMa.Text));
+                    if(query != null)
                     {
-                        tb += "\nMã bệnh nhân đã tồn tại";
+                        t += "Mã bệnh nhân đã tồn tại";
                     }
                 }
-                if (!int.TryParse(tbSoNgay.Text, out a))
+                if (!int.TryParse(txtNgay.Text, out a))
                 {
-                    tb += "\nSố ngày nằm viện phải là số nguyên";
+                    t += "Số ngày nằm viện phải là số nguyên";
                 }
-                else if (int.Parse(tbSoNgay.Text) < 1)
+                else if (int.Parse(txtNgay.Text) < 1)
                 {
-                    tb += "Số ngày nằm viện phải >= 1";
+                    t += "Số ngày nằm viện phải lớn hơn 1";
                 }
-                
-                
             }
-            
-            if(tb != "")
+            if(t.CompareTo("") != 0)
             {
-                MessageBox.Show(tb, "Thông báo", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(t);
                 return false;
             }
             return true;
         }
-        //public Boolean checkMaBn(int maBn)
-        //{
-        //    var query = from bn in db.BenhNhans
-        //                orderby bn.SoNgayNamVien descending
-        //                select bn;
-        //    for (int i = 0; i < query.ToList().Count; i++)
-        //    {
-        //        if (query.ToList()[i].MaBn == maBn)
-        //        {
-        //            return false;
-        //        }
-        //    }
-        //    return true;
-        //}
-        private void Sua(object sender, RoutedEventArgs e)
+
+        private void Them(object sender, RoutedEventArgs e)
         {
-            var itemEdit = db.BenhNhans.SingleOrDefault(t => tbMabn.Text != "" ? t.MaBn == int.Parse(tbMabn.Text) : false);
-            //if (CheckDL())
-            //{
-            if (itemEdit != null)
+            if(CheckDL())
             {
-                itemEdit.MaBn = int.Parse(tbMabn.Text);
-                itemEdit.HoTen = tbTen.Text;
+                BenhNhan bn = new BenhNhan();
+                bn.MaBn = int.Parse(txtMa.Text);
+                bn.HoTen = txtTen.Text;
+                bn.SoNgayNamVien = int.Parse(txtNgay.Text);
 
-                Khoa itemSelected = (Khoa)CbKhoa.SelectedItem;
-                int maKhoa = itemSelected.MaKhoa;
+                Khoa itemSelected = (Khoa)CBKhoa.SelectedItem;
+                bn.MaKhoa = itemSelected.MaKhoa;
 
-                itemEdit.MaKhoa = maKhoa;
-                itemEdit.SoNgayNamVien = int.Parse(tbSoNgay.Text);
-                itemEdit.VienPhi = int.Parse(tbSoNgay.Text) * 200000;
+                bn.VienPhi = bn.SoNgayNamVien * 200000;
 
+                db.BenhNhans.Add(bn);
                 db.SaveChanges();
-                MessageBox.Show("Sửa thành công");
+                MessageBox.Show("Thêm thành công");
                 HienThiDuLieu();
-            }
-            else
-            {
-                MessageBox.Show("Khong co item de sua");
-
-            }
+            } 
         }
+        
+        //private void Tim(object sender, RoutedEventArgs e)
+        //{
+        //    txtMa.Text = "Hello";
+        //    var query = from bn in db.BenhNhans
+        //                join k in db.Khoas
+        //                on bn.MaKhoa equals k.MaKhoa
+        //                where bn.MaKhoa == 1
+        //                select new
+        //                {
+        //                    bn.MaBn,
+        //                    bn.HoTen,
+        //                    k.TenKhoa,
+        //                    bn.SoNgayNamVien,
+        //                    VienPhi = bn.thanhTien()
+        //                };
+        //    Window1 w1 = new Window1();
+        //    w1.dg2.ItemsSource = query.ToList();
+        //    w1.Show();
+        //}
 
-        private void Xoa(object sender, RoutedEventArgs e)
-        {
-            var itemDel = db.BenhNhans.SingleOrDefault(t => tbMabn.Text != "" ? t.MaBn == int.Parse(tbMabn.Text): false);
-            if (itemDel != null)
-            {
-                MessageBoxResult result = MessageBox.Show("Vui long xac nhan xoa", "Thong bao", MessageBoxButton.YesNo);
-                if (result == MessageBoxResult.Yes)
-                {
-                    db.BenhNhans.Remove(itemDel);
-                    db.SaveChanges();
-                    MessageBox.Show("Xoa thanh cong");
-                    HienThiDuLieu();
-                }
-            }
-            else
-            {
-                MessageBox.Show("Khong co item de xoa");
-            }
-        }
-
-        private void Tim(object sender, RoutedEventArgs e)
-        {
-            Window1 window1 = new Window1();
-            window1.dgW2.Items.Clear();
-            var query = from bn in db.BenhNhans
-                        where bn.MaKhoa == 1
-                        select bn;
-            for (int i = 0; i < query.ToList().Count; i++)
-            {
-                BenhNhan benhNhan = query.ToList()[i];
-                window1.dgW2.Items.Add(benhNhan);
-            }
-            window1.Show();
-
-        }
-
-        private void dg_SelectedCellsChanged(object sender, SelectedCellsChangedEventArgs e)
+        private void dg_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if(dg.SelectedItem != null)
             {
-                try
-                {
-                    Type t = dg.SelectedItem.GetType();
-                    PropertyInfo[] p = t.GetProperties();
-
-                    tbMabn.Text = p[0].GetValue(dg.SelectedValue).ToString();
-                    tbTen.Text = p[1].GetValue(dg.SelectedValue).ToString();
-                    CbKhoa.SelectedValue = p[4].GetValue(dg.SelectedValue).ToString();
-                    tbSoNgay.Text = p[2].GetValue(dg.SelectedValue).ToString();
-
-                }
-                catch(Exception ex)
-                {
-                    MessageBox.Show(ex.ToString());
-                }
+                Type t = dg.SelectedItem.GetType();
+                PropertyInfo[] p = t.GetProperties();
+                txtMa.Text = p[0].GetValue(dg.SelectedItem).ToString();
+                txtTen.Text = p[1].GetValue(dg.SelectedItem).ToString();
+                CBKhoa.Text = p[2].GetValue(dg.SelectedItem).ToString();
+                txtNgay.Text = p[3].GetValue(dg.SelectedItem).ToString();
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            txtMa.Text = "Hello";
+            var query = from bn in db.BenhNhans
+                        join k in db.Khoas
+                        on bn.MaKhoa equals k.MaKhoa
+                        where bn.MaKhoa == 1
+                        select new
+                        {
+                            bn.MaBn,
+                            bn.HoTen,
+                            k.TenKhoa,
+                            bn.SoNgayNamVien,
+                            VienPhi = bn.thanhTien()
+                        };
+            Window1 w1 = new Window1();
+            w1.dg2.ItemsSource = query.ToList();
+            w1.Show();
         }
     }
 }

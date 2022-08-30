@@ -1,0 +1,65 @@
+Scaffold-DbContext "" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+Style="{DynamicResource border1}"
+
+Type t = list.SelectedItem.GetType();
+PropertyInfo[] p = t.GetProperties();
+abc.Text = p[0].GetValue(list.SelectedValue).ToString();
+
+public string thanhTien()
+        {
+            CultureInfo cultureInfo = CultureInfo.GetCultureInfo("vi-VN");
+            int a = (int)(DonGiaBan * SoLuongCon);
+            string b = a.ToString("#,###", cultureInfo.NumberFormat);
+            return b;
+        }
+
+		var query = from hang in db.Hangs
+                        join dmHang in db.DanhMucHangs
+                        on hang.MaDm equals dmHang.MaDm
+                        select new {
+                            dmHang.MaDm,
+                            dmHang.TenDm,
+                            TongTien = hang.SoLuongCon * hang.DonGiaBan
+                        };
+
+            var results = query.GroupBy(a => new { a.MaDm, a.TenDm })
+                .Select(s => new
+                {
+                    s.Key.MaDm,
+                    s.Key.TenDm,
+                    TongTien = s.Sum(sum => sum.TongTien)
+                });
+
+<Window.Resources>
+	<Style TargetType="TextBox">
+		<Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="Foreground" Value="Green" />
+      </Style>
+      <Style x:Key="border1" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="200" Background="Aqua">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+       </Style>
+</Window.Resources>
+
+<DataGridTextColumn.ElementStyle>
+	<Style TargetType="TextBlock">
+		<Setter Property="HorizontalAlignment" Value="Right" />
+		<Setter Property="Foreground" Value="red" />
+		<Setter Property="FontStyle" Value="Italic" />
+	</Style>
+</DataGridTextColumn.ElementStyle>
+
+<DataGrid.Resources>
+	<Style TargetType="DataGridColumnHeader">
+		<Setter Property="FontWeight" Value="bold" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+      </Style>
+</DataGrid.Resources>

@@ -1,1 +1,59 @@
-﻿{"status":2,"buddy_id":"100024926431105","user":{"id":"100024926431105","__isProfile":"User","name":"Ng\u00f4 Th\u1ea3o","story_bucket":{"nodes":[{"id":"281715269336019","first_story_to_show":null}]},"profile_picture":{"uri":"https:\/\/scontent.fhan14-2.fna.fbcdn.net\/v\/t1.30497-1\/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p56x56&_nc_cat=1&ccb=1-7&_nc_sid=7206a8&_nc_ohc=_8ak1Gi-hKwAX-B3ZLA&_nc_ht=scontent.fhan14-2.fna&oh=00_AT_WfCpQuiiEgEn60p5A_fVuGWnFUbNOQmCagkXI6NqtIg&oe=63314CF8"}}}
+﻿<Window x:Class="De01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:De01"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" 
+        Loaded="Window_Loaded">
+    <Window.Resources>
+        <Style TargetType="TextBox" >
+            <Setter Property="FontFamily" Value="Times New Roman" />
+            <Setter Property="Foreground" Value="Blue" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="100" Background="Gray">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Label Content="Mã bệnh nhân:" HorizontalAlignment="Left" Margin="177,17,0,0" VerticalAlignment="Top" Height="30" Width="104"/>
+        <TextBox Name="txtMa" HorizontalAlignment="Left" Margin="286,17,0,0" TextWrapping="Wrap" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="285" Height="30"/>
+        <Label Content="Họ tên: " HorizontalAlignment="Left" Margin="177,52,0,0" VerticalAlignment="Top" Height="30" Width="104"/>
+        <TextBox Name="txtTen" HorizontalAlignment="Left" Margin="286,50,0,0" TextWrapping="Wrap" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="285" Height="30"/>
+        <Label Content="Địa chỉ: " HorizontalAlignment="Left" Margin="177,85,0,0" VerticalAlignment="Top" Height="30" Width="104"/>
+        <TextBox Name="txtDC" HorizontalAlignment="Left" Margin="286,85,0,0" TextWrapping="Wrap" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="285" Height="30"/>
+        <Label Content="Số ngày nằm viện" HorizontalAlignment="Left" Margin="177,120,0,0" VerticalAlignment="Top" Height="30" Width="104"/>
+        <TextBox Name="txtNgay" HorizontalAlignment="Left" Margin="286,120,0,0" TextWrapping="Wrap" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="285" Height="30"/>
+        <Label Content="Khoa khám" HorizontalAlignment="Left" Margin="177,155,0,0" VerticalAlignment="Top" Height="30" Width="104"/>
+        <ComboBox Name="CBKhoa" HorizontalAlignment="Left" Margin="286,155,0,0" VerticalAlignment="Top" Width="285" Height="30"/>
+        <DataGrid Name="dg" Height="160" VerticalAlignment="Top" Margin="95,190,95,0" AutoGenerateColumns="False" CanUserAddRows="False" AlternatingRowBackground="AntiqueWhite" SelectionChanged="dg_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã bệnh nhân" Width="100" Binding="{Binding MaBn}"/>
+                <DataGridTextColumn Header="Họ tên" Width="150" Binding="{Binding HoTen}"/>
+                <DataGridTextColumn Header="Tên khoa" Width="70" Binding="{Binding TenKhoa}"/>
+                <DataGridTextColumn Header="Địa chỉ" Width="100" Binding="{Binding DiaChi}"/>
+                <DataGridTextColumn Header="Số ngày nằm viện" Width="120" Binding="{Binding SoNgayNamVien}"/>
+                <DataGridTextColumn Header="Viện phí" Width="*" Binding="{Binding VienPhi}"/>
+            </DataGrid.Columns>
+            <DataGrid.Resources>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="HorizontalAlignment" Value="Center" />
+                </Style>
+            </DataGrid.Resources>
+        </DataGrid>
+        <Button Click="Them" Content="Thêm" HorizontalAlignment="Left" Margin="262,364,0,0" VerticalAlignment="Top" Height="32" Width="80"/>
+        <Button Click="Button_Click" Content="Tìm" HorizontalAlignment="Left" Margin="491,364,0,0" VerticalAlignment="Top" Height="32" Width="80"/>
+
+    </Grid>
+</Window>

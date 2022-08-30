@@ -7,18 +7,19 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
-        <DataGrid Name="dgW2" Margin="136,113,136,0" Height="160" VerticalAlignment="Top">
+        <DataGrid Name="dg2" Height="160" VerticalAlignment="Top" Margin="95,57,95,0" AutoGenerateColumns="False" CanUserAddRows="False" AlternatingRowBackground="AntiqueWhite">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Mã bệnh nhân" Binding="{Binding MaBn}"/>
-                <DataGridTextColumn Header="Họ tên" Binding="{Binding HoTen}" Width="150"/>
-                <DataGridTextColumn Header="Mã khoa" Binding="{Binding MaKhoa}" />
-                <DataGridTextColumn Header="Số ngày nằm viện" Binding="{Binding SoNgayNamVien}" />
-                <DataGridTextColumn Header="Viện phí" Binding="{Binding VienPhi}" Width="*"/>
+                <DataGridTextColumn Header="Mã bệnh nhân" Width="100" Binding="{Binding MaBn}"/>
+                <DataGridTextColumn Header="Họ tên" Width="150" Binding="{Binding HoTen}"/>
+                <DataGridTextColumn Header="Tên khoa" Width="70" Binding="{Binding TenKhoa}"/>
+                <DataGridTextColumn Header="Địa chỉ" Width="100" Binding="{Binding DiaChi}"/>
+                <DataGridTextColumn Header="Số ngày nằm viện" Width="120" Binding="{Binding SoNgayNamVien}"/>
+                <DataGridTextColumn Header="Viện phí" Width="*" Binding="{Binding VienPhi}"/>
             </DataGrid.Columns>
             <DataGrid.Resources>
                 <Style TargetType="DataGridColumnHeader">
-                    <Setter Property="FontWeight" Value="Bold"></Setter>
-                    <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="HorizontalAlignment" Value="Center" />
                 </Style>
             </DataGrid.Resources>
         </DataGrid>

@@ -36,7 +36,7 @@ namespace De01.Models
             modelBuilder.Entity<BenhNhan>(entity =>
             {
                 entity.HasKey(e => e.MaBn)
-                    .HasName("PK__BenhNhan__272475AD691C7991");
+                    .HasName("PK__BenhNhan__272475AD1EA40A2C");
 
                 entity.ToTable("BenhNhan");
 
@@ -49,13 +49,13 @@ namespace De01.Models
                 entity.HasOne(d => d.MaKhoaNavigation)
                     .WithMany(p => p.BenhNhans)
                     .HasForeignKey(d => d.MaKhoa)
-                    .HasConstraintName("FK__BenhNhan__MaKhoa__4BAC3F29");
+                    .HasConstraintName("FK__BenhNhan__MaKhoa__398D8EEE");
             });
 
             modelBuilder.Entity<Khoa>(entity =>
             {
                 entity.HasKey(e => e.MaKhoa)
-                    .HasName("PK__Khoa__6539040579FE7C92");
+                    .HasName("PK__Khoa__653904056B7EE677");
 
                 entity.ToTable("Khoa");
 

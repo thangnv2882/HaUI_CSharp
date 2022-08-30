@@ -1,0 +1,106 @@
+﻿<Window x:Class="De04.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:De04"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Loaded="Window_Loaded">
+
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="Foreground" Value="Green" />
+        </Style>
+        <Style x:Key="border1" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="200" Background="Aqua">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="border2" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="200" Background="Yellow">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="border3" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="200" Background="YellowGreen">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="border4" TargetType="Button">
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="200" Background="Gold">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Label Content="Quản lý danh mục bán hàng" Foreground="Blue" FontSize="30" FontWeight="bold" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Mã hàng: " HorizontalAlignment="Left" Margin="161,60,0,0" VerticalAlignment="Top" Height="30" Width="94"/>
+        <TextBox Name="txtMa" HorizontalAlignment="Left" VerticalContentAlignment="Center" Margin="255,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="408" Height="30"/>
+        <Label Content="Tên hàng" HorizontalAlignment="Left" Margin="161,95,0,0" VerticalAlignment="Top" Height="30" Width="94"/>
+        <TextBox Name="txtTen" HorizontalAlignment="Left" VerticalContentAlignment="Center" Margin="255,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="408" Height="30"/>
+        <Label Content="Đơn giá bán: " HorizontalAlignment="Left" Margin="161,130,0,0" VerticalAlignment="Top" Height="30" Width="94"/>
+        <TextBox Name="txtGia" HorizontalAlignment="Left" VerticalContentAlignment="Center" Margin="255,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="408" Height="30"/>
+        <Label Content="Số lượng còn: " HorizontalAlignment="Left" Margin="161,165,0,0" VerticalAlignment="Top" Height="30" Width="94"/>
+        <TextBox Name="txtSL" HorizontalAlignment="Left" VerticalContentAlignment="Center" Margin="255,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="408" Height="30"/>
+        <Label Content="Danh mục hàng:" HorizontalAlignment="Left" Margin="161,200,0,0" VerticalAlignment="Top" Height="30" Width="94"/>
+        <ComboBox Name="cbDM" HorizontalAlignment="Left" Margin="255,200,0,0" VerticalAlignment="Top" Width="408" Height="30"/>
+        <DataGrid Name="dg" Margin="0,235,0,0" Height="135" VerticalAlignment="Top" HorizontalAlignment="Center" Width="660" CanUserAddRows="False" AutoGenerateColumns="False" SelectionChanged="dg_SelectionChanged"> 
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã hàng" Width="100" Binding="{Binding MaHang}"/>
+                <DataGridTextColumn Header="Tên hàng" Width="150" Binding="{Binding TenHang}"/>
+                <DataGridTextColumn Header="Mã danh mục" Width="100" Binding="{Binding MaDm}"/>
+                <DataGridTextColumn Header="Đơn giá bán" Width="100" Binding="{Binding DonGiaBan}"/>
+                <DataGridTextColumn Header="Số lượng còn" Width="100" Binding="{Binding SoLuongCon}"/>
+                <DataGridTextColumn Header="Thành tiền" Width="*" Binding="{Binding ThanhTien}">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Right" />
+                            <Setter Property="Foreground" Value="red" />
+                            <Setter Property="FontStyle" Value="Italic" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+            <DataGrid.Resources>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="FontWeight" Value="bold" />
+                    <Setter Property="HorizontalAlignment" Value="Center" />
+                </Style>
+            </DataGrid.Resources>
+        </DataGrid>
+        <Button Click="Them" Style="{DynamicResource border1}" Content="Thêm" HorizontalAlignment="Left" Height="30" Margin="148,383,0,0" VerticalAlignment="Top" Width="89"/>
+        <Button Click="Sua" Style="{DynamicResource border2}" Content="Sửa" HorizontalAlignment="Left" Height="30" Margin="275,383,0,0" VerticalAlignment="Top" Width="89"/>
+        <Button Click="Xoa" Style="{DynamicResource border3}" Content="Xoá" HorizontalAlignment="Left" Height="30" Margin="414,383,0,0" VerticalAlignment="Top" Width="90" />
+        <Button Click="Tim" Style="{DynamicResource border4}" Content="Tìm" HorizontalAlignment="Left" Height="30" Margin="550,383,0,0" VerticalAlignment="Top" Width="89"/>
+
+
+
+    </Grid>
+</Window>
