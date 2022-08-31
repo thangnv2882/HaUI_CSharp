@@ -91,3 +91,46 @@ public string thanhTien()
 		<Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
 	</Trigger>
 </ControlTemplate.Triggers>
+
+	public Boolean checkDL()
+        {
+            string t = "";
+            if(txtMa.Text.CompareTo("") == 0 
+                || txtTen.Text.CompareTo("") == 0
+                || txtDG.Text.CompareTo("") == 0
+                || txtSL.Text.CompareTo("") == 0
+                || CBHang.Text.CompareTo("") == 0)
+            {
+                t += "Vui lòng nhập đầy đủ dữ liệu";
+            }
+            else
+            {
+                int a;
+                if(!int.TryParse(txtMa.Text, out a))
+                {
+                    t += "Mã sản phẩm phải là số nguyên";
+                }
+                if (!int.TryParse(txtSL.Text, out a))
+                {
+                    t += "Số lượng bán phải là số nguyên";
+                }
+                else
+                {
+                    if(int.Parse(txtSL.Text) < 1)
+                    {
+                        t += "Số lượng bán phải >= 1";
+                    }
+                }
+                float b;
+                if (!float.TryParse(txtDG.Text, out b))
+                {
+                    t += "Đơn giá phải là số thực";
+                }
+            }
+            if(t.CompareTo("") != 0)
+            {
+                MessageBox.Show(t, "Thông báo");
+                return false;
+            }
+            return true;
+        }

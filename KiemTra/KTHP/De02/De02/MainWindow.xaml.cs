@@ -208,7 +208,6 @@ namespace De02
             w1.dg1.ItemsSource = query.ToList();
             w1.Show();
 
-            
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -217,4 +216,6 @@ namespace De02
             ShowData();
         }
     }
+
+
 }
