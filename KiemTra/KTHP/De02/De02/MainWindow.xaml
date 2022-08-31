@@ -7,65 +7,62 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
         Loaded="Window_Loaded">
+
     <Window.Resources>
-        <Style x:Key="StyleBorder" TargetType="{x:Type Button}">
+        <Style TargetType="TextBox" >
+            <Setter Property="FontFamily" Value="Times New Roman" />
+            <Setter Property="Foreground" Value="Blue" />
+        </Style>
+        <Style TargetType="Button">
             <Setter Property="FontWeight" Value="Bold" />
-            <Setter Property="Template">
+            <Setter Property="Template" >
                 <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type Button}">
+                    <ControlTemplate TargetType="Button">
                         <Border CornerRadius="100" Background="Gray" >
-                            <ContentPresenter Focusable="False" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                         </Border>
-                        
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
         </Style>
-        <Style TargetType="{x:Type TextBox}">
-            <Setter Property="FontFamily" Value="Times New Roman" />
-            <Setter Property="Foreground" Value="Blue" />
-        </Style>
     </Window.Resources>
     <Grid>
-        <Label Content="Mã sản phẩm: " HorizontalAlignment="Left" Margin="191,23,0,0" VerticalAlignment="Top" Width="100" Height="30"/>
-        <TextBox Name="txtMa" HorizontalAlignment="Left" Margin="291,23,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="271" Height="30" VerticalContentAlignment="Center"/>
-        <Label Content="Tên sản phẩm: " HorizontalAlignment="Left" Margin="191,58,0,0" VerticalAlignment="Top" Width="99" Height="30"/>
-        <TextBox Name="txtTen" HorizontalAlignment="Left" Margin="291,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="271" Height="30" VerticalContentAlignment="Center"/>
-        <Label Content="Đơn giá: " HorizontalAlignment="Left" Margin="191,93,0,0" VerticalAlignment="Top" Width="100" Height="30"/>
-        <TextBox x:Name="txtDonGia" HorizontalAlignment="Left" Margin="291,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="271" Height="30" VerticalContentAlignment="Center"/>
-        <Label Content="Số lượng hàng: " HorizontalAlignment="Left" Margin="191,128,0,0" VerticalAlignment="Top" Width="100" Height="30"/>
-        <TextBox Name="txtSoLuong" HorizontalAlignment="Left" Margin="291,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="271" Height="30" VerticalContentAlignment="Center"/>
-        <Label Content="Nhóm hàng: " HorizontalAlignment="Left" Margin="191,163,0,0" VerticalAlignment="Top" Width="95" Height="30"/>
-        <ComboBox Name="CBHang" HorizontalAlignment="Left" Margin="291,163,0,0" VerticalAlignment="Top" Width="271" Height="30"/>
-        <DataGrid Name="dg" Margin="131,217,176,0" Height="138" VerticalAlignment="Top" SelectionChanged="dg_SelectionChanged" AutoGenerateColumns="False">
+        <Label Content="Mã sản phẩm: " HorizontalAlignment="Left" Margin="179,10,0,0" VerticalAlignment="Top" Height="30" Width="104"/>
+        <TextBox Name="txtMa" HorizontalAlignment="Left" VerticalContentAlignment="Center" Margin="288,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="314" Height="30"/>
+        <Label Content="Tên sản phẩm" HorizontalAlignment="Left" Margin="179,45,0,0" VerticalAlignment="Top" Height="30" Width="104"/>
+        <TextBox Name="txtTen" HorizontalAlignment="Left" VerticalContentAlignment="Center" Margin="288,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="314" Height="30"/>
+        <Label Content="Đơn giá: " HorizontalAlignment="Left" Margin="179,80,0,0" VerticalAlignment="Top" Height="30" Width="104"/>
+        <TextBox Name="txtDG" HorizontalAlignment="Left" VerticalContentAlignment="Center" Margin="288,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="314" Height="30"/>
+        <Label Content="Số lượng bán:" HorizontalAlignment="Left" Margin="179,115,0,0" VerticalAlignment="Top" Height="30" Width="104"/>
+        <TextBox Name="txtSL" HorizontalAlignment="Left" VerticalContentAlignment="Center" Margin="288,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="314" Height="30"/>
+        <Label Content="Nhóm hàng: " HorizontalAlignment="Left" Margin="179,150,0,0" VerticalAlignment="Top" Height="30" Width="104"/>
+        <ComboBox Name="CBHang" HorizontalAlignment="Left" Margin="288,150,0,0" VerticalAlignment="Top" Width="314" Height="30"/>
+        <DataGrid Name="dg" Margin="56,185,56,0" Height="149" VerticalAlignment="Top" CanUserAddRows="False" AutoGenerateColumns="False" AlternatingRowBackground="AntiqueWhite" SelectionChanged="dg_SelectionChanged">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Mã SP" Binding="{Binding MaSp}" />
-                <DataGridTextColumn Header="Tên sản phẩm" Binding="{Binding TenSanPham}" Width="150" />
-                <DataGridTextColumn Header="Đơn giá" Binding="{Binding DonGia}" />
-                <DataGridTextColumn Header="Số lượng bán" Binding="{Binding SoLuongBan}" />
-                <DataGridTextColumn Header="Nhóm hàng" Binding="{Binding TenNhomHang}" />
-                <DataGridTextColumn Header="TienBan" Binding="{Binding TienBan}" Width="*">
+                <DataGridTextColumn Header="Mã SP" Width="80" Binding="{Binding MaSp}" />
+                <DataGridTextColumn Header="Tên sản phẩm" Width="140" Binding="{Binding TenSanPham}" />
+                <DataGridTextColumn Header="Đơn giá" Width="100" Binding="{Binding DonGia}" />
+                <DataGridTextColumn Header="Số lượng bán" Width="100" Binding="{Binding SoLuongBan}" />
+                <DataGridTextColumn Header="Nhóm hàng" Width="100" Binding="{Binding TenNhomHang}" />
+                <DataGridTextColumn Header="Tiền bán" Width="*" Binding="{Binding TienBan}">
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">
-                            <Setter Property="HorizontalAlignment" Value="Center"/>
-                            <Setter Property="FontWeight" Value="Bold" />
+                            <Setter Property="FontWeight" Value="bold"/>
                         </Style>
                     </DataGridTextColumn.ElementStyle>
                 </DataGridTextColumn>
             </DataGrid.Columns>
             <DataGrid.Resources>
                 <Style TargetType="DataGridColumnHeader">
-                    <Setter Property="FontWeight" Value="Bold"></Setter>
-                    <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+                    <Setter Property="FontWeight" Value="Bold" />
+                    <Setter Property="HorizontalAlignment" Value="Center" />
                 </Style>
             </DataGrid.Resources>
         </DataGrid>
-        <Button Style="{DynamicResource StyleBorder}" Click="Them" Content="Thêm" HorizontalAlignment="Left" Margin="168,373,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.427,0.784" Height="31" Width="73"/>
-        <Button Style="{DynamicResource StyleBorder}" Click="Sua" Content="Sửa" HorizontalAlignment="Left" Margin="275,373,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.427,0.784" Height="31" Width="73"/>
-        <Button Style="{DynamicResource StyleBorder}" Click="Xoa" Content="Xoá" HorizontalAlignment="Left" Margin="390,373,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.427,0.784" Height="31" Width="73"/>
-        <Button Style="{DynamicResource StyleBorder}" Click="Tim" Content="Tìm" HorizontalAlignment="Left" Margin="509,373,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.427,0.784" Height="31" Width="73"/>
-
-
+        <Button Click="Them" Content="Thêm" HorizontalAlignment="Left" Margin="211,370,0,0" VerticalAlignment="Top" Height="30" Width="72"/>
+        <Button Click="Sua" Content="Sửa" HorizontalAlignment="Left" Margin="308,370,0,0" VerticalAlignment="Top" Height="30" Width="72"/>
+        <Button Click="Xoa" Content="Xoá" HorizontalAlignment="Left" Margin="400,370,0,0" VerticalAlignment="Top" Height="30" Width="72"/>
+        <Button Click="Tim" Content="Tìm" HorizontalAlignment="Left" Margin="496,370,0,0" VerticalAlignment="Top" Height="30" Width="72"/>
 
     </Grid>
 </Window>

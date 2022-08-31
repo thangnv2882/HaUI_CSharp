@@ -36,7 +36,7 @@ namespace De02.Models
             modelBuilder.Entity<NhomHang>(entity =>
             {
                 entity.HasKey(e => e.MaNhomHang)
-                    .HasName("PK__NhomHang__2C886681BD5E2E1C");
+                    .HasName("PK__NhomHang__2C886681DDC85A6C");
 
                 entity.ToTable("NhomHang");
 
@@ -48,7 +48,7 @@ namespace De02.Models
             modelBuilder.Entity<SanPham>(entity =>
             {
                 entity.HasKey(e => e.MaSp)
-                    .HasName("PK__SanPham__2725081C4FFD1D87");
+                    .HasName("PK__SanPham__2725081C71FA360F");
 
                 entity.ToTable("SanPham");
 

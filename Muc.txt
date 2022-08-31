@@ -31,6 +31,25 @@ public string thanhTien()
                     TongTien = s.Sum(sum => sum.TongTien)
                 });
 
+		// Thông kê mỗi nhóm hàng bán được bn sản phẩm
+            var query = from sp in db.SanPhams
+                        join nh in db.NhomHangs
+                        on sp.MaNhomHang equals nh.MaNhomHang
+                        orderby sp.SoLuongBan descending
+                        select new
+                        {
+                            sp.MaNhomHang,
+                            sp.SoLuongBan
+                        };
+
+            var result = query.GroupBy(g => new { g.MaNhomHang } )
+                .Select(s => new
+                {
+                    s.Key.MaNhomHang,
+                    Sum = s.Sum(sum => sum.SoLuongBan)
+                });
+
+
 <Window.Resources>
 	<Style TargetType="TextBox">
 		<Setter Property="FontFamily" Value="Times New Roman"/>
@@ -63,3 +82,12 @@ public string thanhTien()
             <Setter Property="HorizontalAlignment" Value="Center" />
       </Style>
 </DataGrid.Resources>
+
+
+<ControlTemplate.Triggers>
+	<Trigger Property="IsEnabled" Value="false">
+		<Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+		<Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+		<Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+	</Trigger>
+</ControlTemplate.Triggers>

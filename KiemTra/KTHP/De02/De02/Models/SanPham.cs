@@ -17,9 +17,9 @@ namespace De02.Models
 
         public string tienBan()
         {
-            CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
-            int a = (int)(SoLuongBan * DonGia);
-            string b = a.ToString("#,###", cul.NumberFormat);
+            CultureInfo cultureInfo = CultureInfo.GetCultureInfo("vi-VN");
+            double a = (double)(SoLuongBan * DonGia);
+            string b = a.ToString("#,###", cultureInfo.NumberFormat);
             return b;
         }
 

@@ -7,26 +7,25 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
-        <DataGrid Name="dg2" Margin="154,79,154,0" Height="138" VerticalAlignment="Top" AutoGenerateColumns="False">
+        <DataGrid Name="dg1" Margin="56,68,56,0" Height="149" VerticalAlignment="Top" CanUserAddRows="False" AutoGenerateColumns="False" AlternatingRowBackground="AntiqueWhite" >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Mã SP" Binding="{Binding MaSp}" />
-                <DataGridTextColumn Header="Tên sản phẩm" Binding="{Binding TenSanPham}" Width="150" />
-                <DataGridTextColumn Header="Đơn giá" Binding="{Binding DonGia}" />
-                <DataGridTextColumn Header="Số lượng bán" Binding="{Binding SoLuongBan}" />
-                <DataGridTextColumn Header="Nhóm hàng" Binding="{Binding TenNhomHang}" />
-                <DataGridTextColumn Header="TienBan" Binding="{Binding TienBan}" Width="*">
+                <DataGridTextColumn Header="Mã SP" Width="80" Binding="{Binding MaSp}" />
+                <DataGridTextColumn Header="Tên sản phẩm" Width="140" Binding="{Binding TenSanPham}" />
+                <DataGridTextColumn Header="Đơn giá" Width="100" Binding="{Binding DonGia}" />
+                <DataGridTextColumn Header="Số lượng bán" Width="100" Binding="{Binding SoLuongBan}" />
+                <DataGridTextColumn Header="Nhóm hàng" Width="100" Binding="{Binding TenNhomHang}" />
+                <DataGridTextColumn Header="Tiền bán" Width="*" Binding="{Binding TienBan}">
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">
-                            <Setter Property="HorizontalAlignment" Value="Center"/>
-                            <Setter Property="FontWeight" Value="Bold" />
+                            <Setter Property="FontWeight" Value="bold"/>
                         </Style>
                     </DataGridTextColumn.ElementStyle>
                 </DataGridTextColumn>
             </DataGrid.Columns>
             <DataGrid.Resources>
                 <Style TargetType="DataGridColumnHeader">
-                    <Setter Property="FontWeight" Value="Bold"></Setter>
-                    <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+                    <Setter Property="FontWeight" Value="Bold" />
+                    <Setter Property="HorizontalAlignment" Value="Center" />
                 </Style>
             </DataGrid.Resources>
         </DataGrid>
